@@ -1,0 +1,18 @@
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 20px 25px;
+    cursor: pointer;
+}
+
+nav ul li a{
+    display: inline-block;
+    color: black;
+    font-family: 'Bebas Neue';
+    font-size: 20px;
+}
