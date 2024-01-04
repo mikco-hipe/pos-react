@@ -6,4 +6,4 @@ export const paths = {
     inventory: 'inventory',
     settings: 'settings',
     error: 'error'
-}
+} as const;
