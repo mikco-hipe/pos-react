@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom'
 import { paths } from '../utils/routes'
 import './sidebar.scss'
 
-const Sidebar = () => {
+const Sidebar: React.FC = () => {
   return (
     <header>
         <nav>

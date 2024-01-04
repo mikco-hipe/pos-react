@@ -2,7 +2,7 @@ import React from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import '@/styles/index.scss';
 import { paths } from '@/utils/routes'
-import RootLayout from '@/pages/RootLayout';
+import RootLayout from '@/pages/RootLayout'
 import POS from '@/pages/pos/POS'
 import Invoice from '@/pages/invoice/Invoice'
 import Sales from '@/pages/sales/Sales'
@@ -27,9 +27,8 @@ const router = createBrowserRouter([
   }
 ])
 
-function App() {
-
-  return <RouterProvider router={router} />
-}
+const App: React.FC = () => {
+  return <RouterProvider router={router} />;
+};
 
 export default App
