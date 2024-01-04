@@ -10,7 +10,7 @@ export default defineConfig({
   server: {
     port: Number(process.env.PORT)
   },
-  deifne: {
+  define: {
     'process.env.PORT': `${process.env.PORT}`
   }
 })
