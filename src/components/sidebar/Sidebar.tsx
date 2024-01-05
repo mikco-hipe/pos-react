@@ -1,6 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import { paths } from '../utils/routes'
+import { paths } from '../../utils/routes'
 import './sidebar.scss'
 
 const Sidebar: React.FC = () => {

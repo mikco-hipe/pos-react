@@ -1,11 +1,12 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
-import Sidebar from '@/components/Sidebar'
+import Sidebar from '@/components/sidebar/Sidebar'
+import Header from '@/components/header/Header'
 
 const RootLayout: React.FC = () => {
   return (
     <>
-        <Sidebar />
+        <Header />
         <main>
             <Outlet />
         </main>
