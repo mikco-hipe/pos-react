@@ -6,7 +6,7 @@ const Dashboard: React.FC = () => {
     <>
       <div>Dashboard</div>
       {/* Try to uncomment FoodApi component to test the fetching */}
-      {/* <FoodApi />  */}
+      <FoodApi /> 
     </>
   );
 };
