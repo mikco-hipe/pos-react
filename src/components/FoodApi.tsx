@@ -21,7 +21,7 @@ interface Food {
 
 const FoodApi: React.FC = () => {
   const [foods, setFoods] = useState<Food[]>([]);
-  const type = 'breakfast';
+  const type = 'main-course';
 
   useEffect(() => {
     const fetchData = async () => {
