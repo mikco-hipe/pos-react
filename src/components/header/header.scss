@@ -1,6 +1,7 @@
 @import '@/styles/index';
 
 .menu {
+    z-index: 1;
     background-color: $header;
     position: fixed;
     width: 100%;

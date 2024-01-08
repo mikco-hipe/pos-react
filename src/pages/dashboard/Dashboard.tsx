@@ -1,12 +1,12 @@
-import FoodApi from '@/components/FoodApi';
+import FoodApi from '@/components/foods/FoodApi';
 import React from 'react';
+
 
 const Dashboard: React.FC = () => {
   return (
     <>
       <div>Dashboard</div>
-      {/* Try to uncomment FoodApi component to test the fetching */}
-      <FoodApi /> 
+      <FoodApi foodType="bread"/> 
     </>
   );
 };
