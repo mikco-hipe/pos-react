@@ -1,0 +1,19 @@
+@import '@/styles/index';
+
+.details {
+    align-items: center;
+
+    &_title {
+        font-family: 'Roboto Light';
+        font-size: 15px;
+    }
+
+    &_image {
+        border-radius: 5%;
+    }
+    
+    &_price {
+        font-family: 'Roboto Bold';
+    }
+}
+

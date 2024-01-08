@@ -1,0 +1,11 @@
+
+@import '@/styles/index';
+
+.view_all_btn {
+  color: $button-pay;
+  background: none;
+  border: none;
+  font-family: 'Roboto Bold';
+  cursor: pointer;
+  outline: inherit;
+}
