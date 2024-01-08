@@ -1,9 +1,13 @@
 import React, { useState } from 'react';
 import { Cart, Menu, SearchIcon } from '@/utils/icons'
+import { useLocation } from 'react-router-dom';
 import './header.scss'
 import Sidebar from '../sidebar/Sidebar';
 
 const Header: React.FC = () => {
+    const location = useLocation();
+    const page = location.pathname.split('/').pop();
+
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
     const toggleSidebar = () => {
@@ -19,7 +23,7 @@ const Header: React.FC = () => {
                             <Menu />
                         </li>
                         <li className='menu_title'>
-                            Page Name
+                            {page}
                         </li>
                     </ul>
                     <ul>

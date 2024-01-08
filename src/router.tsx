@@ -14,12 +14,12 @@ export const router = createBrowserRouter([
         path: '/',
         element: <RootLayout />,
         children: [
-            { path: paths.dashboard, element: <Dashboard /> },
-            { path: paths.pos, element: <POS /> },
-            { path: paths.invoice, element: <Invoice /> },
-            { path: paths.sales, element: <Sales /> },
-            { path: paths.inventory, element: <Inventory /> },
-            { path: paths.settings, element: <Settings /> },
+            { path: `${paths.dashboard}/:page?`, element: <Dashboard /> },
+            { path: `${paths.pos}/:page?`, element: <POS /> },
+            { path: `${paths.invoice}/:page?`, element: <Invoice /> },
+            { path: `${paths.sales}/:page?`, element: <Sales /> },
+            { path: `${paths.inventory}/:page?`, element: <Inventory /> },
+            { path: `${paths.settings}/:page?`, element: <Settings /> },
             { path: paths.error, element: <Error /> },
         ]
     }
