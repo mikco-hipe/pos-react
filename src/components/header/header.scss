@@ -2,10 +2,14 @@
 
 .menu {
     background-color: $header;
+    position: fixed;
+    width: 100%;
 
     &_title {
         font-size: 22px;
         display: flex;
+        text-transform: uppercase;
+        letter-spacing: 2px;
     }
 
     &_icon {
@@ -13,6 +17,7 @@
         font-size: 20px;
         cursor: pointer;
     }
+
     nav {
         padding: 0 90px 0 90px;
         display: flex;
@@ -20,16 +25,16 @@
         justify-content: space-between;
         margin-bottom: 3px;
         border-bottom: 1px solid $button-quantity;
-    
+
         ul {
             display: flex;
             align-items: center;
-    
+
             li {
                 display: flex;
                 margin: 20px 10px;
                 font-family: 'Roboto Bold';
-    
+
                 a {
                     display: inline-block;
                 }

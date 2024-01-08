@@ -1,7 +1,7 @@
 export const paths = {
-    dashboard: '',
+    dashboard: 'dashboard',
     pos: 'pos',
-    invoice: 'invoice', //transactionId also
+    invoice: 'invoice',
     sales: 'sales',
     inventory: 'inventory',
     settings: 'settings',
