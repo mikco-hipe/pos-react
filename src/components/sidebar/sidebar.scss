@@ -1,18 +1,63 @@
-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+@import '@/styles/index';
 
-nav ul li {
-    display: inline-block;
-    margin: 20px 25px;
-    cursor: pointer;
-}
+.sidebar-container {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    height: 100vh;
+    width: 270px;
+    background-color: $header;
+    transition: left 0.3s ease-in-out;
+    border-right: 2px solid $button-quantity;
+    box-shadow: 2px 2px 4px $button-quantity;
 
-nav ul li a{
-    display: inline-block;
-    color: black;
-    font-family: 'Bebas Neue';
-    font-size: 20px;
+    &.open {
+        left: 0;
+    }
+
+    .button-div {
+        text-align: right;
+    }
+
+    button.close-button {
+        background: none;
+        border: none;
+        font-size: 25px;
+        cursor: pointer;
+        padding: 17px 17px 15px 0px;
+        color: $sidebar;
+
+        &:hover {
+            color: #262428;
+        }
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+
+        ul {
+            padding: 0;
+
+            li {
+                margin: 35px 0;
+                font-size: 27px;
+
+                a {
+                    color: $sidebar;
+                    font-family: 'Bebas Neue';
+                    font-weight: 300;
+                    text-decoration: none;
+                    letter-spacing: 5px;
+
+                    &:hover {
+                        color: #262428;
+                    }
+                }
+            }
+        }
+    }
 }
