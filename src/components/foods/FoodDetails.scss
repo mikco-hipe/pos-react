@@ -3,16 +3,16 @@
 .details {
     align-items: center;
 
-    &-title {
+    &_title {
         font-family: 'Roboto Light';
         font-size: 15px;
     }
 
-    &-image {
+    &_image {
         border-radius: 5%;
     }
     
-    &-price {
+    &_price {
         font-family: 'Roboto Bold';
     }
 }

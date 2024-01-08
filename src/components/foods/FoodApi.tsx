@@ -39,25 +39,25 @@ const FoodApi: React.FC<FoodApiProps> = ({ foodType }) => {
   return (
     <div className="food">
       {foods.length > 0 && (
-        <div className="food-recom">
-          <h2 className='food-h2'>Recommended Products</h2>
+        <div className="food_recom">
+          <h2 className='food_h2'>Recommended Products</h2>
           <ViewAll initialViewAll={false} initialNavigate="View All" onViewAllChange={setViewAll} />
         </div>
       )}
       {foods.length > 0 && !viewAll ? (
-        <ul className="food-grid-slider">
+        <ul className="food_grid_slider">
           <FoodSlider foods={foods} />
         </ul>
       ) : (
         foods.length > 0 && (
-          <ul className="food-grid">
+          <ul className="food_grid">
             {foods.map((food) => (
               <FoodDetails key={food.id} food={food} />
             ))}
           </ul>
         )
       )}
-      {foods.length === 0 && <p className='food-no-items'>No food items found.</p>}
+      {foods.length === 0 && <p className='food_no_items'>No food items found.</p>}
     </div>
   );
 };

@@ -21,7 +21,7 @@ const ViewAll: React.FC<ViewAllProps> = ({ initialViewAll, initialNavigate, onVi
   };
 
   return (
-    <button onClick={handleClick}>{navigate}</button>
+    <button className='view_all_btn' onClick={handleClick}>{navigate}</button>
   );
 };
 
