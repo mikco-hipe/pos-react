@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import TabButton from "./TabButton";
+import TabButton from "./buttons/TabButton";
 
 import Main from "@/assets/images/dashboard-icons/fire-logo.svg";
 import Soup from "@/assets/images/dashboard-icons/soup-logo.svg";
