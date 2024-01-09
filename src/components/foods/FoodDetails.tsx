@@ -1,7 +1,5 @@
 import React from 'react';
-import './FoodDetails.scss'
 import Food from '@/models/food'
-import 'swiper/css';
 
 interface FoodDetailsProps {
   food: Food;

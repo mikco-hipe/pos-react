@@ -2,7 +2,6 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import { paths } from '@/utils/routes'
 import { Cross } from '@/utils/icons'
-import './sidebar.scss'
 
 interface SidebarProps {
     onClose: () => void;
