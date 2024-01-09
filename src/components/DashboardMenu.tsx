@@ -31,43 +31,43 @@ const DashboardMenu: React.FC = () => {
           <li>
             <TabButton onSelect={() => handleSelect("main-course")}>
               <img className="courses_icon" src={Main} alt="main course" />
-              Main course
+              <p className="courses_title">Main course</p>
             </TabButton>
           </li>
           <li>
             <TabButton onSelect={() => handleSelect("soup")}>
               <img className="courses_icon" src={Soup} alt="soup" />
-              Soup
+              <p className="courses_title">Soup</p>
             </TabButton>
           </li>
           <li>
             <TabButton onSelect={() => handleSelect("dessert")}>
               <img className="courses_icon" src={Dessert} alt="dessert" />
-              Dessert
+              <p className="courses_title">Dessert</p>
             </TabButton>
           </li>
           <li>
             <TabButton onSelect={() => handleSelect("bread")}>
               <img className="courses_icon" src={Bread} alt="bread" />
-              Bread
+              <p className="courses_title">Bread</p>
             </TabButton>
           </li>
           <li>
             <TabButton onSelect={() => handleSelect("beverage")}>
               <img className="courses_icon" src={Beverages} alt="beverages" />
-              Beverages
+              <p className="courses_title">Beverages</p>
             </TabButton>
           </li>
           <li>
             <TabButton onSelect={() => handleSelect("breakfast")}>
               <img className="courses_icon" src={Breakfast} alt="breakfast" />
-              Breakfast
+              <p className="courses_title">Breakfast</p>
             </TabButton>
           </li>
           <li>
             <TabButton onSelect={() => handleSelect("snack")}>
               <img className="courses_icon" src={Snack} alt="snack" />
-              Snack
+              <p className="courses_title">Snack</p>
             </TabButton>
           </li>
         </ul>
