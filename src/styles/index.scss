@@ -1,6 +1,8 @@
 @import './colors';
 @import './defaults';
 @import './fonts';
+@import './object';
+@import './breakpoint/';
 
-$breakpoint-tablet: 1024px;
-$breakpoint-phone: 600px;
+@import './layout';
+@import './pages';

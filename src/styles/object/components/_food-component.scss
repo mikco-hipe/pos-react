@@ -1,0 +1,54 @@
+.food {
+    padding: 80px 90px 0 90px;
+    margin: 0;
+  
+    &_h2 {
+      font-family: 'Roboto Thin';
+      font-size: 20px;
+    }
+  
+    &_recom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 15px 0 15px 0;
+    }
+  
+    &_grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 16px;
+    }
+  
+    &_no_items {
+      display: flex;
+      justify-content: center;
+      font-family: 'Roboto Bold';
+    }
+  }
+  
+  .details {
+    align-items: center;
+
+    &_title {
+        font-family: 'Roboto Light';
+        font-size: 15px;
+    }
+
+    &_image {
+        border-radius: 5%;
+    }
+    
+    &_price {
+        font-family: 'Roboto Bold';
+    }
+}
+
+.view_all_btn {
+    color: $button-pay;
+    background: none;
+    border: none;
+    font-family: 'Roboto Bold';
+    cursor: pointer;
+    outline: inherit;
+  }

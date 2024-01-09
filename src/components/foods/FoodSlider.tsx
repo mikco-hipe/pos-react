@@ -2,7 +2,7 @@ import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import FoodDetails from '@/components/foods/FoodDetails';
+import FoodDetails from './FoodDetails';
 import Food from '@/models/food';
 
 interface FoodSliderProps {
@@ -11,7 +11,7 @@ interface FoodSliderProps {
 
 const FoodSlider: React.FC<FoodSliderProps> = ({ foods }) => {
   const sliderSettings = {
-    infinite: true,
+    infinite: false,
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 4,

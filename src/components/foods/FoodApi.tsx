@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import FoodSlider from '@/components/slider/FoodSlider';
-import ViewAll from '@/components/view-all/ViewAll';
-import { fetchFoods } from '@/utils/apiUtil';
-import './FoodApi.scss';
-import Food from '@/models/food';
+import FoodSlider from './FoodSlider';
+import ViewAll from './FoodViewAll';
 import FoodDetails from './FoodDetails';
+import Food from '@/models/food';
+import { fetchFoods } from '@/utils/apiUtil';
+import { shuffleArray } from '@/utils/shuffleArray';
 
 interface FoodApiProps {
   foodType: string;
@@ -27,14 +27,6 @@ const FoodApi: React.FC<FoodApiProps> = ({ foodType }) => {
   useEffect(() => {
     fetchData();
   }, [foodType]);
-
-  const shuffleArray = (array: Food[]) => {
-    for (let i = array.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [array[i], array[j]] = [array[j], array[i]];
-    }
-    return array;
-  };
 
   return (
     <div className="food">

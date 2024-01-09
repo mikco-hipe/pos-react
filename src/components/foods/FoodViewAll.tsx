@@ -1,5 +1,4 @@
 import React, { useState, useEffect} from 'react';
-import './ViewAll.scss'
 
 interface ViewAllProps {
   initialViewAll: boolean;
