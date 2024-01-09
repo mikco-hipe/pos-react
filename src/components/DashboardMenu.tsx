@@ -1,13 +1,15 @@
 import React, { useEffect, useState } from "react";
 import TabButton from "./buttons/TabButton";
 
-import Main from "@/assets/images/dashboard-icons/fire-logo.svg";
-import Soup from "@/assets/images/dashboard-icons/soup-logo.svg";
-import Dessert from "@/assets/images/dashboard-icons/cupcake-logo.svg";
-import Bread from "@/assets/images/dashboard-icons/bread-logo.svg";
-import Beverages from "@/assets/images/dashboard-icons/wine-logo.svg";
-import Breakfast from "@/assets/images/dashboard-icons/breakfast-logo.svg";
-import Snack from "@/assets/images/dashboard-icons/snack-logo.svg";
+import {
+  Main,
+  Soup,
+  Dessert,
+  Bread,
+  Beverages,
+  Breakfast,
+  Snack,
+} from "@/utils/icons";
 
 import FoodApi from "@/components/foods/FoodApi";
 
@@ -16,7 +18,7 @@ const DashboardMenu: React.FC = () => {
 
   useEffect(() => {
     handleSelect(selectedCourse);
-  }, [selectedCourse])
+  }, [selectedCourse]);
 
   function handleSelect(category: string) {
     setSelectedCourse(category);
@@ -70,7 +72,7 @@ const DashboardMenu: React.FC = () => {
           </li>
         </ul>
       </menu>
-      {selectedCourse && <FoodApi foodType={selectedCourse}/> }
+      {selectedCourse && <FoodApi foodType={selectedCourse} />}
     </>
   );
 };
