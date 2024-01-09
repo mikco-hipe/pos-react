@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import { Cart, Menu, SearchIcon } from '@/utils/icons'
+import { CartBtn, Menu, SearchIcon } from '@/utils/icons'
 import { useLocation } from 'react-router-dom';
 import Sidebar from '@/layouts/sidebar/Sidebar'
+import Cart from '@/layouts/cart/Cart';
 
 const Header: React.FC = () => {
     const location = useLocation();
@@ -11,6 +12,12 @@ const Header: React.FC = () => {
 
     const toggleSidebar = () => {
         setIsSidebarOpen(!isSidebarOpen);
+    };
+
+    const [isCartOpen, setIsCartOpen] = useState(false);
+
+    const toggleCart = () => {
+        setIsCartOpen(!isCartOpen);
     };
 
     return (
@@ -32,14 +39,17 @@ const Header: React.FC = () => {
                                 <input className='input' type="text" placeholder="Search" />
                             </form>
                         </li>
-                        <li className='cart-icon'>
-                            <Cart />
+                        <li className='cart-icon' onClick={toggleCart}>
+                            <CartBtn />
                         </li>
                     </ul>
                 </nav>
             </header>
             <div className={`sidebar-container ${isSidebarOpen ? 'open' : ''}`}>
                 <Sidebar onClose={toggleSidebar} />
+            </div>
+            <div className={`cart-container ${isCartOpen ? 'open' : ''}`}>
+                <Cart onClose={toggleCart} />
             </div>
         </div>
     )

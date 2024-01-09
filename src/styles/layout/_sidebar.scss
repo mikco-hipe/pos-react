@@ -60,3 +60,40 @@
         }
     }
 }
+
+
+/* -------------- MEDIA QUERIES (MEDIUM DEVICES) -------------- */
+@media (max-width: $breakpoint-tablet) {
+    .sidebar-container {
+        width: 250px;
+
+        button.close-button {
+            padding: 30px 17px 15px 0px;
+        }
+    }
+}
+
+/* -------------- MEDIA QUERIES (SMALL DEVICES) -------------- */
+@media (max-width: $breakpoint-phone) {
+    .sidebar-container {
+        width: 180px;
+
+        button.close-button {
+            font-size: 20px;
+            padding: 12px 12px 15px 0px;
+        }
+
+        nav {
+            ul {
+                li {
+                    margin: 35px 0;
+                    font-size: 20px;
+
+                    a {
+                        letter-spacing: 2px;
+                    }
+                }
+            }
+        }
+    }
+}
