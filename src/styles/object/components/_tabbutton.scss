@@ -1,4 +1,4 @@
-.menu-course {
+.menu_course {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -6,14 +6,30 @@
     font-size: 16px;
     border: none;
     padding: 12px 24px;
-    margin: 16px;
+    margin: 10px;
     border-radius: 32px;
     cursor: pointer;
+    width: 200px;
 
-}
-
+    &_selected {
+        font-size: 16px;
+    }
+  }
+  
 .courses_icon {
-    object-fit: cover;
-    margin: 0 10px;
-    height: 16px;
+  object-fit: cover;
+  margin: 0 10px;
+  height: 16px;
 }
+
+@media (max-width: $breakpoint-tablet) {
+    .menu_course {
+        width: 150px;
+    }
+  }
+  
+  @media (max-width: $breakpoint-phone) {
+    .menu_course {
+        width: 70px;
+    }
+  }

@@ -11,7 +11,7 @@ const TabButton: React.FC<TabButtonProps> = (props) => {
   }
 
   return (
-        <button className="menu-course" onClick={clickHandler}>{props.children}</button>
+        <button className="menu_course" onClick={clickHandler}>{props.children}</button>
   );
 };
 
