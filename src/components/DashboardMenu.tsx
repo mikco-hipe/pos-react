@@ -31,43 +31,43 @@ const DashboardMenu: React.FC = () => {
           <li>
             <TabButton onSelect={() => handleSelect("main-course")}>
               <img className="courses_icon" src={Main} alt="main course" />
-              <p className="courses_title">Main course</p>
+              <p>Main course</p>
             </TabButton>
           </li>
           <li>
             <TabButton onSelect={() => handleSelect("soup")}>
               <img className="courses_icon" src={Soup} alt="soup" />
-              <p className="courses_title">Soup</p>
+              <p>Soup</p>
             </TabButton>
           </li>
           <li>
             <TabButton onSelect={() => handleSelect("dessert")}>
               <img className="courses_icon" src={Dessert} alt="dessert" />
-              <p className="courses_title">Dessert</p>
+              <p>Dessert</p>
             </TabButton>
           </li>
           <li>
             <TabButton onSelect={() => handleSelect("bread")}>
               <img className="courses_icon" src={Bread} alt="bread" />
-              <p className="courses_title">Bread</p>
+              <p>Bread</p>
             </TabButton>
           </li>
           <li>
             <TabButton onSelect={() => handleSelect("beverage")}>
               <img className="courses_icon" src={Beverages} alt="beverages" />
-              <p className="courses_title">Beverages</p>
+              <p>Beverages</p>
             </TabButton>
           </li>
           <li>
             <TabButton onSelect={() => handleSelect("breakfast")}>
               <img className="courses_icon" src={Breakfast} alt="breakfast" />
-              <p className="courses_title">Breakfast</p>
+              <p>Breakfast</p>
             </TabButton>
           </li>
           <li>
             <TabButton onSelect={() => handleSelect("snack")}>
               <img className="courses_icon" src={Snack} alt="snack" />
-              <p className="courses_title">Snack</p>
+              <p>Snack</p>
             </TabButton>
           </li>
         </ul>
