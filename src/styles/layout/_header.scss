@@ -78,3 +78,62 @@
     color: #312F33;
     cursor: pointer;
 }
+
+
+/* -------------- MEDIA QUERIES (MEDIUM DEVICES) -------------- */
+@media (max-width: $breakpoint-tablet) {
+    .menu {
+        &_title {
+            font-size: 20px;
+            letter-spacing: 1px;
+        }
+
+        &_icon {
+            font-size: 18px;
+        }
+
+        nav {
+            padding: 10px 35px 10px 35px;
+        }
+    }
+
+    .form {
+        width: 180px;
+        height: 35px;
+
+        button {
+            font-size: 15px;
+        }
+    }
+
+    .cart-icon {
+        font-size: 16px;
+    }
+}
+
+/* -------------- MEDIA QUERIES (SMALL DEVICES) -------------- */
+@media (max-width: $breakpoint-phone) {
+    .menu {
+        &_title {
+            font-size: 17px;
+            letter-spacing: 1px;
+        }
+
+        &_icon {
+            font-size: 15px;
+        }
+
+        nav {
+            padding: 0 15px 0 15px;
+        }
+    }
+
+    .form {
+        display: none;
+
+    }
+
+    .cart-icon {
+        font-size: 15px;
+    }
+}
