@@ -65,7 +65,6 @@
 
 
 /* -------------- MEDIA QUERIES (MEDIUM DEVICES) -------------- */
-$breakpoint-tablet: 1024px;
 @media (max-width: $breakpoint-tablet) {
     .sidebar-container {
         width: 250px;
@@ -77,7 +76,6 @@ $breakpoint-tablet: 1024px;
 }
 
 /* -------------- MEDIA QUERIES (SMALL DEVICES) -------------- */
-$breakpoint-phone: 600px;
 @media (max-width: $breakpoint-phone) {
     .sidebar-container {
         width: 180px;

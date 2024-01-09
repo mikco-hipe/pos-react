@@ -83,7 +83,6 @@
 
 
 /* -------------- MEDIA QUERIES (MEDIUM DEVICES) -------------- */
-$breakpoint-tablet: 1024px;
 @media (max-width: $breakpoint-tablet) {
     .menu {
         &_title {
@@ -115,7 +114,6 @@ $breakpoint-tablet: 1024px;
 }
 
 /* -------------- MEDIA QUERIES (SMALL DEVICES) -------------- */
-$breakpoint-phone: 600px;
 @media (max-width: $breakpoint-phone) {
     .menu {
         &_title {
