@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Cart, Menu, SearchIcon } from '@/utils/icons'
 import { useLocation } from 'react-router-dom';
-import './header.scss'
 import Sidebar from '@/layouts/sidebar/Sidebar'
 
 const Header: React.FC = () => {
