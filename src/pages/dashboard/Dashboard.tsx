@@ -12,7 +12,6 @@ const Dashboard: React.FC = () => {
         <FoodApi foodType="bread" />
       </section>
     </>
-      
   );
 };
 
