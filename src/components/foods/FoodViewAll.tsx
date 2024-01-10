@@ -1,4 +1,4 @@
-import React, { useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 
 interface ViewAllProps {
   initialViewAll: boolean;
@@ -6,7 +6,7 @@ interface ViewAllProps {
   onViewAllChange: (viewAll: boolean) => void;
 }
 
-const ViewAll: React.FC<ViewAllProps> = ({ initialViewAll, initialNavigate, onViewAllChange}) => {
+const ViewAll: React.FC<ViewAllProps> = ({ initialViewAll, initialNavigate, onViewAllChange }) => {
   const [viewAll, setViewAll] = useState<boolean>(initialViewAll);
   const [navigate, setNavigate] = useState<string>(initialNavigate);
 
@@ -20,7 +20,9 @@ const ViewAll: React.FC<ViewAllProps> = ({ initialViewAll, initialNavigate, onVi
   };
 
   return (
-    <button className='view_all_btn' onClick={handleClick}>{navigate}</button>
+    <div className='view_all'>
+      <button className='view_all_btn' onClick={handleClick}>{navigate}</button>
+    </div>
   );
 };
 

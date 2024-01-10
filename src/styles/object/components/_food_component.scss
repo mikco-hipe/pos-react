@@ -18,6 +18,8 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 16px;
+    justify-content: center;
+    align-items: center;
   }
 
   &_no_items {
@@ -28,36 +30,27 @@
 }
 
 .details {
+  display: grid;
+  justify-content: center;
   align-items: center;
 
   &_title {
     font-family: 'Roboto Light';
-    font-size: 18px;
+    font-size: 15px;
   }
 
   &_image {
     border-radius: 5%;
-    margin-bottom: 10px;
   }
 
   &_price {
     font-family: 'Roboto Bold';
-    margin-top: 10px;
-    display: flex;
-    align-items: column;
-
-    svg {
-      margin-left: 10px;
-      font-size: 20px;
-      color: $sidebar;
-      cursor: pointer;
-      transition: color 0.3s ease;
-
-      &:hover {
-        color: $button-pay;
-      }
-    }
   }
+}
+
+.slider_container {
+  margin: 0 auto;
+
 }
 
 .view_all_btn {
@@ -67,4 +60,32 @@
   font-family: 'Roboto Bold';
   cursor: pointer;
   outline: inherit;
+}
+
+@media (max-width: $breakpoint-tablet) {
+  .food {
+    padding: 0 50px 0 50px;
+
+    &_recom {
+      padding: 0 50px 0 50px;
+    }
+  }
+
+  .slider_container {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: $breakpoint-phone) {
+  .food {
+    padding: 0 20px 0 20px;
+
+    &_recom {
+      padding: 0 20px 0 20px;
+    }
+  }
+
+  .slider_container {
+    max-width: 97%;
+  }
 }
