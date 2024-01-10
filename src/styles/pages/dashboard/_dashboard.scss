@@ -1,3 +1,94 @@
 .dashboard {
   background: $sections;
 }
+
+
+.courses {
+  padding: 90px 20px 0 20px;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  
+  &_list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 10px;
+    justify-content: center;
+  }
+
+  p {
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  
+}
+
+@media (max-width: $breakpoint-tablet) {
+  .courses {
+    padding: 90px 50px 0 50px;
+
+    p {
+      font-size: 10px;
+    }
+  }
+}
+
+@media (max-width: $breakpoint-phone) {
+  .courses {
+    padding: 90px 10px 0 10px;
+
+    p {
+      display: none;
+    }
+  }
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 40px 90px;
+  background-image: url('@/assets/images/banners/food-banner-6.jpg'); 
+  background-size: cover;
+  background-position: 50% 50%;
+  height: 200px;
+
+  &_title {
+    font-family: 'Roboto Bold';
+    font-size: 24px;
+    font-weight: 600;
+    color: $sidebar-active;
+    margin: 0 0 10px 20px;
+  }
+
+  &_desc {
+    font-family: 'Roboto Thin';
+    font-size: 16px;
+    font-weight: 700;
+    color: $sidebar-active;
+    margin: 0 0 40px 20px;
+  }
+
+  &_btn {
+    background-color: $sidebar-active;
+    color: $white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    margin: 0 20px;
+  }
+
+  &_btn:hover {
+    background-color: #2980b9;
+  }
+}
