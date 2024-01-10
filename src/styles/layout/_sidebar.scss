@@ -27,7 +27,7 @@
         color: $sidebar;
 
         &:hover {
-            color: #262428;
+            color: $sidebar-active;
         }
     }
 
@@ -54,6 +54,10 @@
 
                     &:hover {
                         color: #262428;
+                    }
+
+                    &.active {
+                        color: $sidebar-active;
                     }
                 }
             }
