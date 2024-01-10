@@ -3,6 +3,7 @@ import React from "react";
 interface TabButtonProps {
   onSelect: (category: string) => void;
   children: React.ReactNode;
+  active?: boolean;
 }
 
 const TabButton: React.FC<TabButtonProps> = (props) => {
@@ -11,7 +12,9 @@ const TabButton: React.FC<TabButtonProps> = (props) => {
   }
 
   return (
-        <button className="menu_course" onClick={clickHandler}>{props.children}</button>
+    <button className={`menu_course ${props.active ? 'active' : ''}`} onClick={clickHandler}>
+      {props.children}
+    </button>
   );
 };
 

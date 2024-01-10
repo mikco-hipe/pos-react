@@ -11,9 +11,16 @@
     cursor: pointer;
     width: 200px;
 
-    &_selected {
-        font-size: 16px;
+    &:hover{
+        background: $dashboard-menu;
+        color: $button-pay;
     }
+
+    &.active {
+      background: $dashboard-menu;
+      color: $button-pay;
+    }
+
   }
   
 .courses_icon {
