@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react"
-import TabButton from "./buttons/TabButton"
+import TabButton from "@/components/buttons/TabButton"
 import FoodApi from "@/components/foods/FoodApi"
 import { courseTypes } from "@/utils/courseData"
 

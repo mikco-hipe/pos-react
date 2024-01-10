@@ -1,4 +1,6 @@
-import DashboardMenu from "@/components/DashboardMenu";
+import DashboardMenu from "@/sections/dashboard/DashboardMenu";
+import FoodApi from "@/components/foods/FoodApi";
+import Banner from "@/sections/dashboard/banner";
 import React from "react";
 
 const Dashboard: React.FC = () => {
@@ -6,6 +8,8 @@ const Dashboard: React.FC = () => {
     <>
       <section className="dashboard">
         <DashboardMenu />
+        <Banner />
+        <FoodApi foodType="bread" />
       </section>
     </>
       
