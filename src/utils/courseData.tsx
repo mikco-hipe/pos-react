@@ -1,4 +1,3 @@
-// courseData.tsx
 import * as Icons from "@/utils/icons";
 
 export const courseTypes = [

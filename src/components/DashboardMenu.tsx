@@ -1,7 +1,5 @@
-// DashboardMenu.tsx
 import React, { useEffect, useState } from "react"
 import TabButton from "./buttons/TabButton"
-import * as Icons from "@/utils/icons"
 import FoodApi from "@/components/foods/FoodApi"
 import { courseTypes } from "@/utils/courseData"
 
