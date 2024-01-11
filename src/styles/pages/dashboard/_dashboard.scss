@@ -1,11 +1,10 @@
 .dashboard {
   background: $sections;
+  width: 75%;
 }
-
 
 .courses {
   padding: 90px 20px 0 20px;
-  margin: 0;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -24,9 +23,53 @@
     font-size: 14px;
     font-weight: 600;
   }
-
-  
 }
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 0px 90px 40px 90px;
+  background-image: url('@/assets/images/banners/food-banner-6.jpg'); 
+  background-size: cover;
+  background-position: 50% 50%;
+  height: 200px;
+
+  &_title {
+    font-family: 'Roboto Bold';
+    font-size: 24px;
+    font-weight: 600;
+    color: $dark-bg;
+    margin: 0 0 10px 20px;
+  }
+
+  &_desc {
+    font-family: 'Roboto Thin';
+    font-size: 16px;
+    font-weight: 700;
+    color: $dark-bg;
+    margin: 0 0 40px 20px;
+  }
+
+  &_btn {
+    background-color: $dark-bg;
+    color: $white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    margin: 0 20px;
+  }
+
+  &_btn:hover {
+    background-color: #2980b9;
+  }
+}
+
 
 @media (max-width: $breakpoint-tablet) {
   .courses {
@@ -45,50 +88,5 @@
     p {
       display: none;
     }
-  }
-}
-
-.banner {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  border-radius: 20px;
-  padding: 20px;
-  margin: 40px 90px;
-  background-image: url('@/assets/images/banners/food-banner-6.jpg'); 
-  background-size: cover;
-  background-position: 50% 50%;
-  height: 200px;
-
-  &_title {
-    font-family: 'Roboto Bold';
-    font-size: 24px;
-    font-weight: 600;
-    color: $sidebar-active;
-    margin: 0 0 10px 20px;
-  }
-
-  &_desc {
-    font-family: 'Roboto Thin';
-    font-size: 16px;
-    font-weight: 700;
-    color: $sidebar-active;
-    margin: 0 0 40px 20px;
-  }
-
-  &_btn {
-    background-color: $sidebar-active;
-    color: $white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    border-radius: 5px;
-    margin: 0 20px;
-  }
-
-  &_btn:hover {
-    background-color: #2980b9;
   }
 }

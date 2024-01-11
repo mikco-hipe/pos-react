@@ -27,7 +27,7 @@
         color: $sidebar;
 
         &:hover {
-            color: $sidebar-active;
+            color: $dark-bg;
         }
     }
 
@@ -53,11 +53,11 @@
                     letter-spacing: 5px;
 
                     &:hover {
-                        color: $sidebar-active;
+                        color: $dark-bg;
                     }
 
                     &.active {
-                        color: $sidebar-active;
+                        color: $dark-bg;
                     }
                 }
             }

@@ -36,20 +36,36 @@
 
   &_title {
     font-family: 'Roboto Light';
-    font-size: 15px;
+    font-size: 16px;
   }
 
   &_image {
     border-radius: 5%;
+    margin-bottom: 10px;
   }
 
   &_price {
     font-family: 'Roboto Bold';
+    margin-top: 10px;
+    display: flex;
+    align-items: column;
+
+    svg {
+      margin-left: 10px;
+      font-size: 20px;
+      color: $sidebar;
+      cursor: pointer;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: $button-pay;
+      }
+    }
   }
 }
 
 .slider_container {
-  margin: 0 auto;
+  margin-bottom: 40px;
 
 }
 
