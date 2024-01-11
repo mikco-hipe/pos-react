@@ -2,7 +2,7 @@
     z-index: 1;
     background-color: $header;
     position: fixed;
-    width: 100%;
+    width: 75%;
 
     &_title {
         font-size: 22px;
@@ -17,8 +17,12 @@
         cursor: pointer;
     }
 
+    .cart-icon {
+        display: none;
+    }
+    
     nav {
-        padding: 0 90px 0 90px;
+        padding: 0 30px 0 30px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -73,11 +77,6 @@
     }
 }
 
-.cart-icon {
-    font-size: 18px;
-    color: #312F33;
-    cursor: pointer;
-}
 
 
 /* -------------- MEDIA QUERIES (MEDIUM DEVICES) -------------- */

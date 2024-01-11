@@ -2,36 +2,18 @@
     z-index: 1;
     position: fixed;
     top: 0;
-    right: -400px;
+    right: 0;
     height: 100vh;
-    width: 400px;
-    background-color: $header;
+    width: 380px;
+    background-color: $dark-bg;
     transition: right 0.3s ease-in-out;
-    border-left: 2px solid $button-quantity;
-    box-shadow: 2px 0px 4px 4px $button-quantity;
-
-    &.open {
-        right: 0;
-    }
-
-    .close_button {
-        background: none;
-        border: none;
-        font-size: 20px;
-        cursor: pointer;
-        color: $sidebar;
-
-        &:hover {
-            color: #262428;
-        }
-    }
 
     .cart_title {
         display: flex;
         align-items: center;
         justify-content: space-between;
         padding: 15px 20px 15px 20px;
-        border-bottom: 1px solid $button-quantity;
+        border-bottom: 1px solid $gray-lighter-bg;
 
         li {
             display: flex;
@@ -39,10 +21,15 @@
         }
 
         .cart_name {
-            font-size: 25px;
-            font-family: 'Roboto Bold';
-            letter-spacing: 2px;
-            color: $sidebar;
+            font-size: 20px;
+            font-family: 'Roboto Regular';
+            letter-spacing: 1px;
+            color: $white;
+            padding: 5px 0px 5px 0px;
+        }
+
+        .close_button {
+            display: none;
         }
     }
 }
