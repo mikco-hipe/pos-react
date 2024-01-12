@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import { CartBtn, Menu, SearchIcon } from '@/utils/icons'
 import { useLocation } from 'react-router-dom';
 import Sidebar from '@/layouts/sidebar/Sidebar'
-import Cart from '@/layouts/cart/Cart';
+import Cart from '@/components/cart/Cart';
+import { DUMMY_CART } from '@/components/cart/DummyCart';
 
 const Header: React.FC = () => {
     const location = useLocation();
@@ -49,7 +50,7 @@ const Header: React.FC = () => {
                 <Sidebar onClose={toggleSidebar} />
             </div>
             <div className={`cart-container ${isCartOpen ? 'open' : ''}`}>
-                <Cart onClose={toggleCart} />
+                <Cart onClose={toggleCart} cartItems={DUMMY_CART} />
             </div>
         </div>
     )
