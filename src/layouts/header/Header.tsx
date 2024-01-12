@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import { CartBtn, Menu, SearchIcon } from '@/utils/icons'
 import { useLocation } from 'react-router-dom';
 import Sidebar from '@/layouts/sidebar/Sidebar'
-import Cart from '@/layouts/cart/Cart';
-import { DUMMY_CART } from '@/layouts/cart/DummyCart';
+import Cart from '@/components/cart/Cart';
+import { DUMMY_CART } from '@/components/cart/DummyCart';
 
 const Header: React.FC = () => {
     const location = useLocation();
